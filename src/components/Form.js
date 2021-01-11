@@ -14,8 +14,8 @@ const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
     setInputText("");
   };
   const statusHandler = (e) => {
-    setStatus(e.target.value)
-  }
+    setStatus(e.target.value);
+  };
   return (
     <form>
       <input
@@ -30,8 +30,8 @@ const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
       <div className="select">
         <select onChange={statusHandler} name="todos" className="filter-todo">
           <option value="all">All</option>
-          <option value="completed">Completed</option>
-          <option value="uncompleted">Uncompleted</option>
+          <option value="completed">Done</option>
+          <option value="uncompleted">Still To-do</option>
         </select>
       </div>
     </form>
